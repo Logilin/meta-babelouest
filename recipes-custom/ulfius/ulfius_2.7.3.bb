@@ -4,7 +4,7 @@ LICENSE = "LGPL-2.1"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=40d2542b8c43a3ec2b7f5da31a697b88"
 
 inherit cmake pkgconfig
-SRC_URI = "git://github.com/babelouest/ulfius"
+SRC_URI = "git://github.com/babelouest/ulfius;protocol=https"
 SRCREV = "v${PV}"
 S = "${WORKDIR}/git"
 
