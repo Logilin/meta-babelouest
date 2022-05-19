@@ -4,7 +4,7 @@ LICENSE = "LGPL-2.1"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=fc178bcd425090939a8b634d1d6a9594"
 
 inherit cmake pkgconfig
-SRC_URI = "git://github.com/babelouest/orcania"
+SRC_URI = "git://github.com/babelouest/orcania;protocol=https"
 SRCREV = "v${PV}"
 S = "${WORKDIR}/git"
 
