@@ -12,4 +12,4 @@ inherit cmake pkgconfig
 
 
 DEPENDS = "jansson"
-RDEPENDS_${PN} = "jansson"
+RDEPENDS:${PN} = "jansson"

@@ -10,5 +10,5 @@ SRCREV = "76b96cfde79e79d55bf36b8d3beb0e24bb0c979c"
 S = "${WORKDIR}/git"
 
 DEPENDS = "gnutls jansson libmicrohttpd yder orcania"
-RDEPENDS_${PN} = "gnutls jansson libmicrohttpd yder orcania"
+RDEPENDS:${PN} = "gnutls jansson libmicrohttpd yder orcania"
 EXTRA_OECMAKE += "-DWITH_JOURNALD=off"

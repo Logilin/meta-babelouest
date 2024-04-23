@@ -12,7 +12,7 @@ S = "${WORKDIR}"
 
 
 DEPENDS = "gnutls jansson libmicrohttpd orcania ulfius yder"
-RDEPENDS_${PN} = "gnutls jansson libmicrohttpd orcania ulfius yder"
+RDEPENDS:${PN} = "gnutls jansson libmicrohttpd orcania ulfius yder"
 
 TARGET_CFLAGS += " -I."
 

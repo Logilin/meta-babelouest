@@ -10,5 +10,5 @@ SRCREV = "28206b26635abcaab47e81984f891c9f74b5bcff"
 S = "${WORKDIR}/git"
 
 DEPENDS = "jansson orcania"
-RDEPENDS_${PN} = "jansson orcania"
+RDEPENDS:${PN} = "jansson orcania"
 EXTRA_OECMAKE += "-DWITH_JOURNALD=off"
