@@ -1,0 +1,13 @@
+diff --git a/src/u_websocket.c b/src/u_websocket.c
+index 5213050..bf831d2 100644
+--- a/src/u_websocket.c
++++ b/src/u_websocket.c
+@@ -2313,7 +2313,7 @@ int ulfius_websocket_wait_close(struct _websocket_manager * websocket_manager, u
+       if (timeout) {
+         clock_gettime(CLOCK_REALTIME, &abstime);
+         abstime.tv_sec += ((time_t)timeout / 1000);
+-        abstime.tv_nsec += (((time_t)timeout%1000) * 1000000);
++        abstime.tv_nsec += (long) (((time_t)timeout%1000) * 1000000);
+         if (abstime.tv_nsec > 999999999) {
+           abstime.tv_nsec %= 1000000000;
+           abstime.tv_sec ++;

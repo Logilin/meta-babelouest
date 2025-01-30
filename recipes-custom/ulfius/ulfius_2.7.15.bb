@@ -7,6 +7,8 @@ inherit cmake pkgconfig
 SRC_URI = "git://github.com/babelouest/ulfius;branch=master;protocol=https"
 SRCREV = "a0603447d3ed63c0880db396b9c395fb4bf6b559"
 
+SRC_URI += "file://0001-fix-long-conversion.patch"
+
 S = "${WORKDIR}/git"
 
 DEPENDS = "gnutls jansson libmicrohttpd yder orcania"
