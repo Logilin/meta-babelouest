@@ -8,7 +8,7 @@ SRC_URI  = "file://simple-example.c"
 SRC_URI += "file://u_example.h"
 SRC_URI += "file://Makefile"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 
 DEPENDS = "gnutls jansson libmicrohttpd orcania ulfius yder"
